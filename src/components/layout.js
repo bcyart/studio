@@ -11,10 +11,10 @@ import Header from "./header"
 import Navigation from "./navigation"
 import Footer from "./footer"
 
-import HomeAbout from "./homePage/homeAbout"
-import HomeBanner from "./homePage/homeBanner"
-import HomeContent from "./homePage/homeContent"
-import HomeFeatured from "./homePage/homeFeatured"
+import HomeAbout from "../components/homePage/homeAbout"
+import HomeBanner from "../components/homePage/HomeBanner"
+import HomeContent from "../components/homePage/HomeContent"
+import HomeFeatured from "../components/homePage/HomeFeatured"
 // Context
 import {
   useGlobalStateContext,
