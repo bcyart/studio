@@ -11,7 +11,7 @@ import Header from "./header"
 import Navigation from "./navigation"
 import Footer from "./footer"
 
-import HomeAbout from "../components/homePage/homeAbout"
+import HomeAbout from "../components/homePage/HomeAbout"
 import HomeBanner from "../components/homePage/HomeBanner"
 import HomeContent from "../components/homePage/HomeContent"
 import HomeFeatured from "../components/homePage/HomeFeatured"
