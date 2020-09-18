@@ -55,7 +55,7 @@ const Header = ({
             onMouseEnter={() => onCursor("hovered")}
             onMouseLeave={onCursor}
           >
-            <Link><svg xmlns="http://www.w3.org/2000/svg" width="280.874" height="60" viewBox="0 0 280.874 60">
+            <Link to="/"><svg xmlns="http://www.w3.org/2000/svg" width="280.874" height="60" viewBox="0 0 280.874 60">
   <g  id="svgbcy" transform="translate(-46 518.037)">
     <path id="Path_21" data-name="Path 21" d="M428.4-517.409c-1.64.519-5.4,2.431-5.4,2.788,0,.065,1.367,2.269,3.007,4.959l3.007,4.862,3.827-6.288c2.118-3.436,3.827-6.418,3.827-6.612C436.666-518.284,430.551-518.057,428.4-517.409Z" transform="translate(-248.196)"/>
     <path id="Path_22" data-name="Path 22" d="M456.1-510.2l-2.9,4.765,3.895.1c2.152.032,5.672.032,7.824,0l3.929-.1-.82-1.621a15.87,15.87,0,0,0-7.858-7.455l-1.2-.486Z" transform="translate(-268.079 -2.052)"/>

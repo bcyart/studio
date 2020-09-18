@@ -61,7 +61,7 @@ const HomeFeatured = ({ onCursor,
               src={require("../../assets/video/featured-video.mp4")}
             >    <track default
             kind="captions"
-            srclang="en"
+            srcLang="en"
            /></video>
           </FeaturedVideo>
         
