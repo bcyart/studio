@@ -20,7 +20,7 @@ p{
       position: relative;
       overflow: hidden;
       transform: rotate(180deg) scale(0.6);
-      
+      z-index:22;
 }
       svg {
         position: absolute;
@@ -28,7 +28,7 @@ p{
         left: -48px;
         width: 108px;
         path {
-          fill: ${props => props.theme.background};
+          fill: red;
         }
       }
     }
