@@ -78,7 +78,7 @@ const Footer = ({ setHamburgerPosition, onCursor }) => {
           </FooterContent>
           <FooterContent wider
               whileHover={{
-        color: currentTheme === "dark" ? "#ffffff" : "#000000",
+        color: currentTheme === "dark" ? "#000000" :"#ffffff" ,
       }}
       onHoverStart={() => setHovered(!hovered)}
       onHoverEnd={() => setHovered(!hovered)}
