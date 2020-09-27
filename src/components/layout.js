@@ -93,7 +93,7 @@ const Layout = ({ children }) => {
   }
 
   return (
-    <ThemeProvider theme={currentTheme === "light" ? lightTheme : darkTheme }>
+    <ThemeProvider theme={currentTheme === "dark" ?  darkTheme : lightTheme }>
  <SEO title="Anasayfa" keywords="burakcanyüksel"/>
       <GlobalStyle />
       
