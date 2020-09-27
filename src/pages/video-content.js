@@ -166,7 +166,7 @@ console.log(currentTheme);
      <CustomCursor />
   
      <ProjectsContainer current={currentTheme} >
-     <p  onMouseEnter={() => onCursor("pointer")}
+     <p  onMouseEnter={() => onCursor("hovered")}
             onMouseLeave={onCursor}> <Link to={`/`}>  <span className="arrow">
                <svg
             xmlns="http://www.w3.org/2000/svg"
