@@ -135,9 +135,6 @@ const Accordion = ({ details, expanded, setExpanded, onCursor }) => {
       <AccordionHeader
         initial={false}
         onClick={() => setExpanded(isOpen ? false : details.id)}
-        whileHover={{
-          color: !isOpen && currentTheme === "dark" ? "#000000" :  "#ffffff",
-        }}
         onHoverStart={() => setHovered(!hovered)}
         onHoverEnd={() => setHovered(!hovered)}
         onMouseEnter={() => onCursor("hovered")}
