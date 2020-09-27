@@ -204,7 +204,7 @@ to{
   
 }
   
-}
+
 @keyframes shot{
 to{
    opacity: 0%;
