@@ -51,18 +51,14 @@ body {
 
 .part2{
 
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    border: 0;
-    outline: 0;
-
-    position: absolute;
-    top: 0px;
-    right: 0;
+  top: 0;
     left: 0;
-    z-index: 100;
-
+    position: absolute;
+    height: 100vh;
+    width:100vw;
+    overflow: hidden;
+  
+    animation: dissappear 6s ease forwards 3s;
 
 }
 .svg-part{
@@ -73,7 +69,7 @@ body {
     height: 100vh;
     width:100vw;
     overflow: hidden;
-    animation: kill 4s ease forwards 3s; 
+    animation: shot 6s ease forwards 3s;
   }
 .eyo{
 
@@ -199,13 +195,14 @@ body {
     stroke-dashoffset: 0;
   }
 }
-@keyframes kill{
- 
- 100%{
-  position: static;
-  overflow: auto; 
- }
 
+@keyframes dissappear{
+to{
+
+    display:none;
+  }
+  
+}
   
 }
 @keyframes shot{
