@@ -148,7 +148,7 @@ console.log(currentTheme);
      
         {picList.map(({ id,title,image}) => (
     
-            <div    onMouseEnter={() => onCursor("pointer")}
+            <div    onMouseEnter={() => onCursor("hovered")}
             onMouseLeave={onCursor} className="item-container" key={id} id={`a${id}`}>
           <img  width="698 " src={image}></img>
 
