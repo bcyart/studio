@@ -50,7 +50,7 @@ body {
 
 
 .part2{
-  background-color:white;
+
     width: 100%;
     height: 100%;
     margin: 0;
@@ -78,7 +78,7 @@ body {
 .eyo{
 
   height: 100vh;
-  background: ${props => props.theme.background};
+  background: ${props => props.theme.text};
   display: flex;
   align-items: center;
   justify-content: center;
