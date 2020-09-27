@@ -269,11 +269,11 @@ const Layout = ({ children }) => {
   
     document.getElementsByTagName("body")[0].style.overflowY="hidden";
  setTimeout(()=>{
-  document.getElementsByClassName("loadTMS")[0].style.display="none";
+
 
   document.getElementsByTagName("body")[0].style.overflowY="auto";
 
- },4500)
+ },6000)
   },[])
 
 
