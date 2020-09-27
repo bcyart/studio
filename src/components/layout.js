@@ -294,7 +294,7 @@ const Layout = ({ children }) => {
   <div className="loadTMS">
 <Loading/>
   </div>
-      <div className="hideTMS">
+      <div className="hideTMS" loading="lazy">
         
       <CustomCursor toggleMenu={toggleMenu} />
       <Header
