@@ -12,9 +12,7 @@ export const FooterNav = styled(motion.div)`
 `
 
 export const FooterContent =  styled(motion.div)`
-p:hover{
-    color: ${props => props.theme.text};
-  }
+
   color: #ea281e;
   font-size: 22px;
   font-weight: 600;
