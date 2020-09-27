@@ -41,7 +41,7 @@ export const GlobalProvider = ({ children }) => {
     currentTheme:
       window.localStorage.getItem("theme") == null
         ? "dark"
-        : window.localStorage.getItem("theme"),
+        : "light",
     cursorType: false,
     cursorStyles: ["pointer", "hovered", "locked", "white","image-hovered-0","image-hovered-1","image-hovered-2","image-hovered-3","image-hovered-4","image-hovered-5"],
   })
