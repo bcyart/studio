@@ -162,7 +162,7 @@ console.log(currentTheme);
      
         {bannerList.map(({ id,title,image}) => (
     
-            <div    onMouseEnter={() => onCursor("pointer")}
+            <div   
             onMouseLeave={onCursor} className="item-container" key={id} id={`a${id}`}>
          <img  width="786px"  src={image}></img>
 
