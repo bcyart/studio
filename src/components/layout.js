@@ -246,14 +246,14 @@ const Layout = ({ children }) => {
 
   const [toggleMenu, setToggleMenu] = useState(false)
 
-  const darkTheme = {
+  const lightTheme = {
     background: "#000",
     text: "#fff",
     left: `${hamburgerPosition.x}px`,
     top: `${hamburgerPosition.y}px`,
   }
 
-  const lightTheme = {
+  const darkTheme = {
     background: "#fff",
     text: "#000",
     left: `${hamburgerPosition.x}px`,
