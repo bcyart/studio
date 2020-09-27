@@ -189,7 +189,7 @@ console.log(currentTheme);
      
         {videoContentList.map(({ id,title,video}) => (
     
-            <div    onMouseEnter={() => onCursor("pointer")}
+            <div   
             onMouseLeave={onCursor} className="item-container" key={id} id={`a${id}`}>
           
               <iframe src={video} width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
