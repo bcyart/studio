@@ -36,9 +36,7 @@ const Header = ({
       setHamburgerPosition({ x: position.x, y: position.y + 72 })
     }
 
-  useEffect(() => {
-    window.localStorage.setItem("theme", currentTheme)
-  }, [currentTheme])
+
 
   const overScroll=()=>{
     document.getElementsByTagName("body")[0].style.overflowY="hidden";
