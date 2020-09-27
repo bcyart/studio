@@ -89,6 +89,10 @@ export const Cursor = styled.div`
   will-change: width, height, transform, border;
   pointer-events: none;
   z-index: 999;
+  @media only screen and (max-width: 501px ) {
+visibility:hidden;
+  
+  }
   
   &.pointer {
     border: 4px solid ${props => props.theme.text} !important;

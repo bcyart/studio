@@ -72,7 +72,7 @@ const HomeBanner = ({ onCursor }) => {
           <ambientLight intensity={1.5} />
           <spotLight position={[-100, 60, 180]} penumbra={1} castShadow />
          
-          <Controls />
+          <Controls/>
       
           <SpaceShip />
         </Canvas>

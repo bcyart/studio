@@ -40,12 +40,15 @@ const Header = ({
     window.localStorage.setItem("theme", currentTheme)
   }, [currentTheme])
 
+  const overScroll=()=>{
+    document.getElementsByTagName("body")[0].style.overflowY="hidden";
+  }
   return (
     <HeaderNav
       animate={{ y: 0, opacity: 1 }}
       initial={{ y: -72, opacity: 0 }}
       transition={{
-        duration: 1,
+      
         ease: [0.6, 0.05, -0.01, 0.9],
       }}
     >
@@ -97,12 +100,11 @@ const Header = ({
       </ThemeSpan>
           <Menu
             onClick={() => setToggleMenu(!toggleMenu)}
-        
             ref={hamburger}
             onMouseEnter={menuHover}
             onMouseLeave={onCursor}
           >
-            <button>
+            <button aria-label="menu"  onClick={()=> overScroll() }>
               <span></span>
               <span></span>
             </button>

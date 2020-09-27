@@ -6,16 +6,16 @@ export const Nav = styled(motion.div)`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   display: block;
   background: #ea281e;
   color: #000;
   z-index: 100;
-  overflow: hidden;
+ overflow:hidden;
+ 
   @media only screen and (max-width: 858px ) {
 
-
-padding: 0 16px;
+padding: 16px;
 
 
   }
@@ -28,7 +28,7 @@ export const NavHeader = styled.div`
     color: ${props => props.theme.background};
   }
   @media only screen and (max-width: 376px ) {
-    top:22px;
+    top:0px;
   }
 `
 export const CloseNav = styled.div`
@@ -53,9 +53,10 @@ export const NavList = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
+  
   ul {
     padding: 0;
-    width:70%;
+    width:75%;
     li {
       list-style: none;
       font-size: 3rem;
@@ -78,25 +79,29 @@ export const NavList = styled.div`
   @media only screen and (max-width: 376px ) {
   ul{
     li{
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
   }
 }
 @media only screen and (max-width: 480px ) {
   ul{
+    margin-top: -70px;
     li{
-      font-size: 2.1rem;
+      font-size: 2.0rem;
+      height: 72px;
+    line-height: 56px;
     }
   }
 }
 `
 export const NavFooter = styled.div`
   position: absolute;
-  bottom: 0;
+  bottom: 0em;
   width: 95%; 
   padding: 56px 0px;
   p {
     color: ${props => props.theme.background};
+   
   }
   svg path {
     fill: ${props => props.theme.background};
@@ -104,8 +109,10 @@ export const NavFooter = styled.div`
   p:hover{
     color: ${props => props.theme.text};
   }
-  @media only screen and (max-width: 376px ) {
-    padding: 36px 0px;
+  @media only screen and (max-width: 480px ) {
+    padding:  0px;
+    bottom: 2.5rem;
+  
   }
   
 `

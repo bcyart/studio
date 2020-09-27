@@ -1,4 +1,5 @@
 import styled from "styled-components"
+
 export const ProjectsContainer = styled.div`
 position: fixed;
   top: 0;
@@ -9,7 +10,9 @@ position: fixed;
   background: ${props => props.theme.background};
   color: ${props => props.theme.text};
 cursor:none;
-  
+p{
+  width:3%;
+}
 .arrow {
       width: 60px;
       height: 80px;
@@ -59,11 +62,42 @@ width:70%;
 }
 
 
+#a15{
+  margin-left:34rem;
+}
+#a14{
+  margin-right:24rem;
+}
+#a13{
+  margin-left:34rem;
+}
+#a12{
+  margin-right:24rem;
+}
+#a11{
+  margin-left:34rem;
+}
+#a10{
+  margin-right:24rem;
+}
+#a9{
+  margin-left:34rem;
+}
+#a8{
+  margin-right:24rem;
+}
+#a7{
+  margin-left:34rem;
+}
+#a6{
+  margin-right:24rem;
+
+}
 #a5{
-margin-left:25rem;
+  margin-left:34rem;
 }
 #a4{
-margin-left:13rem;
+  margin-right:24rem;
 }
 #a3{
 margin-left:34rem;
@@ -72,10 +106,10 @@ margin-left:34rem;
 margin-right:24rem;
 }
 #a1{
-margin-left:13rem;
+  margin-left:34rem;
 }
 #a0{
-margin-left:17rem;
+  margin-right:24rem;
 
 }
 
@@ -95,14 +129,49 @@ width: 100%;
     z-index:999;
     }
 h2{
-font-size: 2em;
+font-size: 1.7em;
 
 }    
+
+
+
+ 
+#a15{
+  margin-left:0;
+}
+#a14{
+  margin-right:0;
+}
+#a13{
+  margin-left:0;
+}
+#a12{
+  margin-right:0;
+}
+#a11{
+  margin-left:0;
+}
+#a10{
+  margin-right:0;
+}
+#a9{
+  margin-left:0;
+}
+#a8{
+  margin-right:0;
+}
+#a7{
+  margin-left:0;
+}
+#a6{
+  margin-right:0;
+
+}
 #a5{
-margin-left:0;
+  margin-left:0;
 }
 #a4{
-margin-left:0;
+  margin-right:0;
 }
 #a3{
 margin-left:0;
@@ -111,24 +180,23 @@ margin-left:0;
 margin-right:0;
 }
 #a1{
-margin-left:0;
-transform: scale(1);
+  margin-left:0;
 }
 #a0{
-margin-left:0;
+  margin-right:0;
 
-
-}      
+}
 
 
 `
 
-
+ 
 export const ProjectsHeader = styled.h2 `
+font-family: 'Montserrat', sans-serif;
 position: absolute;
-top:83%;
+top:86%;
 left:0.7em;
-font-size: 3em;
+font-size: 2.456em;
 font-weight: bold;
 margin-bottom: 10px;
 

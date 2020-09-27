@@ -6,7 +6,7 @@ import {Link} from "gatsby";
 import SEO from "../components/SEO";
 import useWindowSize from "../hooks/useWindowSize";
 
-import droneList from "./droneList.js";
+
 
 //Custom Cursor
 import CustomCursor from "../components/customCursor"
@@ -18,6 +18,17 @@ import {
 } from "../context/globalContext"
 
 function Drone() {
+
+  const droneList = [
+    {
+      id: 0,
+      title: "Drone Teaser",
+      path: "/Drone Teaser",
+      video:"https://player.vimeo.com/video/457524506?title=0&byline=0&portrait=0"
+
+    }
+  ]
+
   
   const darkTheme = {
     background: "#000",

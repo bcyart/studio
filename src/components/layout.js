@@ -25,9 +25,11 @@ import SEO from "./SEO";
 
 const GlobalStyle = createGlobalStyle`
 ${normalize}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 * {
   text-decoration: none;
   cursor: none;
+ 
 }
 html {
     box-sizing: border-box;
@@ -35,15 +37,15 @@ html {
     font-size: 16px;
   
   
-}
+} 
 body {
   font-size: 16px;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: ${props => props.theme.background};
   overscroll-behavior: none;
   overflow-x: hidden;
-
   
+ 
 }
 
 
@@ -51,7 +53,7 @@ body {
 `
 
 const Layout = ({ children }) => {
-  const dispatch = useGlobalDispatchContext()
+  const dispatch = useGlobalDispatchContext();
   const { cursorStyles, currentTheme } = useGlobalStateContext()
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -105,7 +107,7 @@ const Layout = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
       />
       <Navigation
-    
+   
         toggleMenu={toggleMenu}
         setToggleMenu={setToggleMenu}
         onCursor={onCursor}
@@ -115,7 +117,6 @@ const Layout = ({ children }) => {
       <main >
   
       <HomeBanner
-      
       onCursor={onCursor}
       toggleMenu={toggleMenu}
       setToggleMenu={setToggleMenu}
@@ -123,7 +124,7 @@ const Layout = ({ children }) => {
       setHamburgerPosition={setHamburgerPosition}
       />
       <HomeContent   
-      
+    
       onCursor={onCursor}
       toggleMenu={toggleMenu}
       setToggleMenu={setToggleMenu}
@@ -131,6 +132,7 @@ const Layout = ({ children }) => {
       setHamburgerPosition={setHamburgerPosition}
       />
       <HomeFeatured
+      
       onCursor={onCursor}
       toggleMenu={toggleMenu}
       setToggleMenu={setToggleMenu}
@@ -139,6 +141,7 @@ const Layout = ({ children }) => {
       
       />
             <HomeAbout
+            
              onCursor={onCursor}
              toggleMenu={toggleMenu}
              setToggleMenu={setToggleMenu}
@@ -146,7 +149,9 @@ const Layout = ({ children }) => {
              setHamburgerPosition={setHamburgerPosition}
         />
       </main>
+  
       <Footer
+    
         onCursor={onCursor}
         hamburgerPosition={hamburgerPosition}
         setHamburgerPosition={setHamburgerPosition}

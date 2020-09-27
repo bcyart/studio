@@ -3,7 +3,9 @@ import { motion } from "framer-motion"
 
 //Banner
 export const Banner = styled.div`
-  background: url("/banner-back.png") no-repeat fixed center  ;
+background: url("https://www.incos.com.tr/wp-content/uploads/revslider/slider-dot-img-2-red.png") no-repeat fixed center   ;
+background: url("/banner-back.png") no-repeat fixed center;
+background-size: cover;
 
   height: 70vh;
   width: 75%;
@@ -22,18 +24,19 @@ text-align:center;
 
 width:100%;
 padding: 0 16px;
-height: 50vh;
-margin-top: 200px;
+height: 40vh;
+margin-top: 230px;
 
   }
   @media only screen and (max-width: 376px ) {
+    width:85% !important;
   padding:0px;
 overflow:none;
   }
 
   @media only screen and (max-width: 322px ) {
     padding-left: 32px;
-    
+   
     margin-top: 230px;
   }
 
@@ -69,6 +72,7 @@ export const Content = styled(motion.h2)`
     margin-left: 0px;
     margin-top:200px;
     font-size:1.7em;
+    margin-top:100px;
   }
   @media only screen and (max-width: 376px ) {
     padding-right: 0px;
@@ -272,11 +276,18 @@ export const Services = styled.div`
 h3{
   margin:0;
   
+  color: ${props => props.theme.text};
 }
+@media only screen and (max-width: 501px ) {
+  
+
+  padding-top: 120px;
+   
+  }
 @media only screen and (max-width: 376px ) {
   
 padding-left:16px !important;
-  
+
  
 }
 

@@ -53,9 +53,9 @@ const HomeFeatured = ({ onCursor,
       
             
           </FeaturedContent>
-          <FeaturedVideo>
+          <FeaturedVideo >
             <video
-          
+          loading="lazy"
               loop
               autoPlay
               src={require("../../assets/video/featured-video.mp4")}

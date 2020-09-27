@@ -50,7 +50,14 @@ const navRoutes = [
 
 const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
  
-
+  const overScroll2=()=>{
+    document.getElementsByTagName("body")[0].style.overflowY="auto";
+  }
+  const clickHandler=()=>{
+   overScroll2();
+  onCursor("hovered");
+  }
+  
   return (
     <>
       <AnimatePresence>
@@ -70,7 +77,7 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                     onMouseEnter={() => onCursor("pointer")}
                     onMouseLeave={onCursor}
                   >
-                    <button>
+                    <button aria-label="menu" onClick={()=> overScroll2()} >
                       <span></span>
                       <span></span>
                     </button>
@@ -78,14 +85,14 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                 </Flex>
               </NavHeader>
               <NavList>
-                <ul>
+                <ul >
                   {navRoutes.map(route => (
                     <motion.li
                       key={route.id}
-                
+                      onClick={()=>clickHandler()}
                       onMouseEnter={() => onCursor(`image-hovered-${route.id}`)}
                       onMouseLeave={onCursor}
-                     onClick={()=>onCursor("hovered")}
+                  
 
                     >
                       <Link to={`${route.path}`}>
@@ -119,12 +126,12 @@ const Navigation = ({ toggleMenu, setToggleMenu, onCursor }) => {
                   
                   onMouseEnter={() => onCursor("pointer")}
                       onMouseLeave={onCursor}>
-                    <p>info@bcyart.studio</p>
+                         <p>902.315.12 79</p>
                   </FooterContent>
                   <FooterContent
                   onMouseEnter={() => onCursor("pointer")}
                   onMouseLeave={onCursor} wider>
-                    <p>902.315.1279</p>
+                       <p>info@bcyart.studio</p>
                   </FooterContent>
                   <FooterSocial>
                     <a

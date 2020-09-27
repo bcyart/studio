@@ -20,6 +20,7 @@ export const FooterContent =  styled(motion.div)`
   ${props =>
     props.wider &&
     css`
+    
       flex: 2;
     `} 
      @media only screen and (max-width: 858px ) {
@@ -46,7 +47,7 @@ export const FooterSocial = styled.div`
   a {
     position: relative;
     display: block;
-    width: 24px;
+    width: 24px;  
     height: 24px;
     padding: 8px;
     svg {
@@ -54,14 +55,5 @@ export const FooterSocial = styled.div`
       height: 100%;
     }
   }
-  @media only screen and (max-width: 376px ) {
-    a{
-      padding: 0px;
-    }
 
-    width:34%;
-  justify-content: space-between;  
-
-
-}
 `

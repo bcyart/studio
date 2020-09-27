@@ -1,8 +1,17 @@
 import React, { createContext, useReducer, useContext } from "react"
 
-//Define Conext
-const GlobalStateContext = createContext()
-const GlobalDispatchContext = createContext()
+const defaultState = {
+  currentTheme:"dark",
+  cursorType: false,
+    cursorStyles:"pointer"
+}
+
+
+//Define Context
+const GlobalStateContext = createContext(defaultState)
+const GlobalDispatchContext = createContext(defaultState)
+
+
 
 //Reducer
 const globalReducer = (state, action) => {
@@ -34,7 +43,7 @@ export const GlobalProvider = ({ children }) => {
         ? "dark"
         : window.localStorage.getItem("theme"),
     cursorType: false,
-    cursorStyles: ["pointer", "hovered", "locked", "white","image-hovered-0","image-hovered-1","image-hovered-2","image-hovered-3","image-hovered-4","image-hovered-5",""],
+    cursorStyles: ["pointer", "hovered", "locked", "white","image-hovered-0","image-hovered-1","image-hovered-2","image-hovered-3","image-hovered-4","image-hovered-5"],
   })
 
   return (

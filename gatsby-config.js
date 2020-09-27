@@ -9,6 +9,7 @@ module.exports = {
     
   },
   plugins: [
+    
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -36,6 +37,7 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
 /*
 
      <Helmet>
