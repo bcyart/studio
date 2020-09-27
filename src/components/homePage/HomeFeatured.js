@@ -54,13 +54,13 @@ const HomeFeatured = ({ onCursor,
             
           </FeaturedContent>
           <FeaturedVideo >
-            <video
-          loading="lazy"
+              <video
+          muted
               loop
               autoPlay
-              src={require("../../assets/video/featured-video.mp4")}
+              src="https://vod-progressive.akamaized.net/exp=1601252626~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2167%2F15%2F385836865%2F1624487146.mp4~hmac=3f45555eccfc3a89d30a682d53982fd18903cd8470914f812da5a733ee531b3b/vimeo-prod-skyfire-std-us/01/2167/15/385836865/1624487146.mp4"
             >    <track default
-            kind="captions"
+            kind="captions" 
             srcLang="en"
            /></video>
           </FeaturedVideo>
