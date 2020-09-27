@@ -58,7 +58,7 @@ body {
     width:100vw;
     overflow: hidden;
   
-    animation: dissappear 6s ease forwards 3s;
+    animation: kill 6s ease forwards 3s; 
 
 }
 .svg-part{
@@ -69,7 +69,7 @@ body {
     height: 100vh;
     width:100vw;
     overflow: hidden;
-    animation: shot 6s ease forwards 3s;
+     animation: dissappear 6s ease forwards 3s; 
   }
 .eyo{
 
@@ -78,7 +78,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: shot 4s ease forwards 3s;
+  animation: shot 6s ease forwards 3s;
   }
 
 #logo {
@@ -213,7 +213,15 @@ to{
   }
   
 }
+@keyframes kill{
+ 
+ 100%{
+  position: static;
+  overflow: auto; 
+ }
 
+  
+}
 
 
 
@@ -273,7 +281,7 @@ const Layout = ({ children }) => {
 
   document.getElementsByTagName("body")[0].style.overflowY="auto";
 
- },6000)
+ },5000)
   },[])
 
 
