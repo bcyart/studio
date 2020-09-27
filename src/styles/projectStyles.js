@@ -7,8 +7,8 @@ position: fixed;
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: ${props => props.theme.background};
-  color: ${props => props.theme.text};
+  background: ${props => props.theme.text};
+  color: ${props => props.theme.background};
 cursor:none;
 p{
   width:3%;
