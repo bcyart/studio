@@ -132,7 +132,7 @@ console.log(currentTheme);
      
         {droneList.map(({ id,title,video}) => (
     
-            <div    onMouseEnter={() => onCursor("hovered")}
+            <div    
             onMouseLeave={onCursor} className="item-container" key={id} id={`a${id}`}>
           
               <iframe src={video} width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
