@@ -50,14 +50,16 @@ body {
 
 
 .part2{
-
-  top: 0;
-    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    outline: 0;
     position: absolute;
-    height: 100vh;
-    width:100vw;
-    overflow: hidden;
-  
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 100;
     animation: kill 6s ease forwards 3s; 
 
 }
