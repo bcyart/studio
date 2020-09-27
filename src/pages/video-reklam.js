@@ -190,7 +190,7 @@ console.log(currentTheme);
      
         {videoAdList.map(({ id,title,video}) => (
     
-            <div    onMouseEnter={() => onCursor("pointer")}
+            <div    onMouseEnter={() => onCursor("hovered")}
             onMouseLeave={onCursor} className="item-container" key={id} id={`a${id}`}>
           
               <iframe src={video} width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
