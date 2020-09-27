@@ -28,7 +28,7 @@ p{
         left: -48px;
         width: 108px;
         path {
-          fill: ${props => props.theme.text};
+          fill: ${props => props.theme.background};
         }
       }
     }
