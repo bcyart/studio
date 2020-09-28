@@ -64,8 +64,8 @@ export const Logo = styled.div`
 
   @media only screen and (max-width: 858px ) {
 
-padding-left:16px;
-padding-right:16px;
+padding-left:48px;
+
   }
  
   
