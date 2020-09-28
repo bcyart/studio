@@ -29,7 +29,7 @@ margin-top: 230px;
 
   }
   @media only screen and (max-width: 376px ) {
-    width:85% !important;
+
   padding:0px;
 overflow:none;
   }
