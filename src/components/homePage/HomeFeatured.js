@@ -55,6 +55,7 @@ const HomeFeatured = ({ onCursor,
           </FeaturedContent>
           <FeaturedVideo >
               <video
+    loading="lazy"
     poster="https://images.pexels.com/photos/5385032/pexels-photo-5385032.jpeg?auto=compress&cs=tinysrgb&dpr=2"
           muted
               loop
