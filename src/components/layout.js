@@ -10,7 +10,7 @@ import CustomCursor from "../components/customCursor"
 import Header from "./header"
 import Navigation from "./navigation"
 import Footer from "./footer"
-import Loading from  "./loading"
+
 import HomeAbout from "../components/homePage/HomeAbout"
 import HomeBanner from "../components/homePage/HomeBanner"
 import HomeContent from "../components/homePage/HomeContent"
