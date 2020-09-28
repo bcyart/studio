@@ -224,7 +224,20 @@ to{
 
   
 }
+@keyframes dissappear{
+  to{
+     height: 0px;
 
+  }
+  
+}
+
+
+@media screen and (min-width: 992px) {
+ .svg-part{
+  animation: dissappear 6s ease forwards 3s; 
+ }
+}
 
 
 
@@ -283,7 +296,7 @@ const Layout = ({ children }) => {
 
   document.getElementsByTagName("body")[0].style.overflowY="auto";
 
- },5000)
+ },4000)
   },[])
 
 
