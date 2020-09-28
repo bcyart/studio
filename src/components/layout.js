@@ -50,28 +50,30 @@ body {
 
 
 .part2{
+ 
     width: 100%;
     height: 100%;
     margin: 0;
     border: 0;
     outline: 0;
+
     position: absolute;
     top: 0px;
     right: 0;
     left: 0;
     z-index: 100;
+  
     animation: kill 6s ease forwards 3s; 
-
 }
 .svg-part{
-  
     top: 0;
     left: 0;
     position: absolute;
     height: 100vh;
     width:100vw;
     overflow: hidden;
-     animation: dissappear 6s ease forwards 3s; 
+   
+
   }
 .eyo{
 
@@ -197,24 +199,6 @@ body {
     stroke-dashoffset: 0;
   }
 }
-
-@keyframes dissappear{
-to{
-
-    display:none;
-  }
-  
-}
-  
-
-@keyframes shot{
-to{
-   opacity: 0%;
-    width:0px;   height: 0px;
-    
-  }
-  
-}
 @keyframes kill{
  
  100%{
@@ -224,6 +208,16 @@ to{
 
   
 }
+@keyframes shot{
+to{
+   opacity: 0%;
+    width:0px;  
+    height: 0px;
+    display:none;
+  }
+  
+}
+
 @keyframes dissappear{
   to{
      height: 0px;
@@ -237,10 +231,9 @@ to{
  .svg-part{
   animation: dissappear 6s ease forwards 3s; 
  }
+
+
 }
-
-
-
 
 `
 
@@ -288,15 +281,15 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     
- 
+
   
     document.getElementsByTagName("body")[0].style.overflowY="hidden";
  setTimeout(()=>{
 
-
   document.getElementsByTagName("body")[0].style.overflowY="auto";
 
  },4000)
+
   },[])
 
 
@@ -304,7 +297,7 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={currentTheme === "dark" ? darkTheme : lightTheme}>
  <SEO title="Anasayfa" keywords="burakcanyüksel"/>
       <GlobalStyle />
- <div className="hideTMS" >
+       <div className="hideTMS" >
         
       <CustomCursor toggleMenu={toggleMenu} />
       <Header
@@ -401,7 +394,6 @@ const Layout = ({ children }) => {
 </div>
   </div>
      
-    
     </ThemeProvider>
   )
 }
