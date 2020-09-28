@@ -291,10 +291,10 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={currentTheme === "dark" ? darkTheme : lightTheme}>
  <SEO title="Anasayfa" keywords="burakcanyüksel"/>
       <GlobalStyle />
-  <div className="loadTMS">
+  <div className="loadTMS" loading="lazy" >
 <Loading/>
   </div>
-      <div className="hideTMS" loading="lazy">
+      <div className="hideTMS" >
         
       <CustomCursor toggleMenu={toggleMenu} />
       <Header
