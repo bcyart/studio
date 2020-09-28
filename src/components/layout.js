@@ -47,7 +47,17 @@ body {
   
  
 }
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
 
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: red;
+}
 
 .part2{
  
